@@ -1,0 +1,42 @@
+name: medibridge
+description: AI-powered real-time medical interpreter for language barriers
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # AI
+  google_generative_ai: ^0.4.3
+  
+  # Speech - 7.3.0 fixes the Registrar bug
+  speech_to_text: 7.3.0
+  flutter_tts: ^4.2.0
+  translator: ^1.0.0
+  
+  # State
+  provider: ^6.1.2
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  animated_text_kit: ^4.2.2
+  lottie: ^3.1.2
+  
+  # Utils
+  permission_handler: ^11.3.1
+  uuid: ^4.4.0
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
